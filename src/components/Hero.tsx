@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Phone } from "lucide-react";
+import { Github, Linkedin, Phone, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,23 +16,34 @@ const Hero = () => {
             <span className="text-primary text-lg font-medium">👋 Hey there, I'm</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="gradient-text">Ian Riua</span>
           </h1>
           
-          <p className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-normal">
             Data Analyst | Python & SQL Developer
           </p>
           
-          <p className="text-xl text-muted-foreground mb-4">
+          <p className="text-lg text-muted-foreground mb-4">
             Data Science & IT Specialist
           </p>
           
-          <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-base text-muted-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
             Passionate about the transformative power of data — turning raw numbers into insights that drive innovation and solve real-world challenges.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
+              asChild
+            >
+              <a href="/cv.pdf" download>
+                <Download className="w-5 h-5" />
+                Download CV
+              </a>
+            </Button>
+            
             <Button 
               size="lg" 
               className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
@@ -46,7 +57,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="gap-2 border-primary/50 hover:bg-primary/10 transition-all hover:scale-105"
+              className="gap-2 border-primary hover:bg-primary/10 transition-all hover:scale-105"
               asChild
             >
               <a href="#services">
