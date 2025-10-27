@@ -1,26 +1,26 @@
-import { Brain, Database, Zap, TrendingUp } from "lucide-react";
+import { Brain, BarChart3, Filter, PieChart } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Brain,
-    title: "Machine Learning & Predictive Modeling",
-    description: "Building models that uncover patterns, optimize performance, and support decision-making."
-  },
-  {
-    icon: TrendingUp,
+    icon: BarChart3,
     title: "Data Analysis & Visualization",
-    description: "Transforming datasets into clear, actionable insights using Python, SQL, Power BI, and Tableau."
+    description: "Transforming raw datasets into clear, actionable insights through exploratory analysis and visual storytelling using Python, excel and SQL."
   },
   {
-    icon: Zap,
-    title: "ETL & Automation",
-    description: "Designing efficient data pipelines to improve accuracy, accessibility, and reporting speed."
+    icon: Filter,
+    title: "Data Cleaning & Preparation (Data Wrangling)",
+    description: "Preparing and structuring raw data for analysis by cleaning, transforming, and validating datasets for accuracy and efficiency."
   },
   {
-    icon: Database,
-    title: "Business Intelligence",
-    description: "Translating analytical results into strategic recommendations that drive measurable business value."
+    icon: PieChart,
+    title: "Business Intelligence & Reporting",
+    description: "Translating data into strategic insights and performance dashboards that help teams measure results, track KPIs, and make informed decisions."
+  },
+  {
+    icon: Brain,
+    title: "Machine Learning & Predictive Analytics (Introductory Level)",
+    description: "Exploring how predictive models can uncover trends and forecast outcomes using Python, Scikit-learn, and basic regression or classification techniques."
   }
 ];
 
