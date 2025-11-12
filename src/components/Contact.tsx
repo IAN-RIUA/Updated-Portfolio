@@ -81,7 +81,7 @@ const Contact = () => {
             className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
             asChild
           >
-            <a href="mailto:hello@ianriua.com">
+            <a href="mailto:ianriuam@gmail.com">
               <Mail className="w-5 h-5" />
               Send an Email
             </a>
