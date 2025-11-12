@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
           
           <p className="text-base text-muted-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about the transformative power of data — turning raw numbers into insights that drive innovation and solve real-world challenges.
+            Passionate about the transformative power of data turning raw numbers into insights that drive innovation and solve real world challenges.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
