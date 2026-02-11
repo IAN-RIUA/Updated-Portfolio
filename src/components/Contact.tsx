@@ -76,20 +76,19 @@ const Contact = () => {
           <p className="text-muted-foreground mb-6">
             If your work thrives on data-driven innovation, I'd love to contribute and grow alongside your team.
           </p>
-          <Button
+        <Button
   size="lg"
   asChild
   className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
 >
   <a
-    href="mailto:ianriuam@gmail.com?subject=Hello%20Ian&body=Hi%20Ian,%0D%0A%0D%0AI'm%20reaching%20out%20regarding..."
-    target="_blank"
-    rel="noopener noreferrer"
+    href="mailto:ianriuam@gmail.com?subject=Project%20Inquiry&body=Hi%20Ian,%0D%0A%0D%0AI%27d%20love%20to%20connect%20with%20you%20regarding%20a%20potential%20opportunity.%0D%0A%0D%0ABest%20regards,"
   >
     <Mail className="w-5 h-5" />
     Send an Email
   </a>
 </Button>
+
 
         </div>
       </div>
