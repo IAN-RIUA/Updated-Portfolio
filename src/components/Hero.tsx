@@ -38,7 +38,7 @@ const Hero = () => {
               className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
               asChild
             >
-              <a href="/cv.pdf" download>
+              <a href="/resume.pdf" download>
                 <Download className="w-5 h-5" />
                 Download CV
               </a>
