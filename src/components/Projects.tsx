@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -184,7 +183,7 @@ const Projects = () => {
         </Swiper>
 
         <div className="text-center mt-4">
-          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground mr-2">
+          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <a
               href="https://github.com/IAN-RIUA?tab=repositories"
               target="_blank"
@@ -193,9 +192,6 @@ const Projects = () => {
             >
               Explore All Repositories
             </a>
-          </Button>
-          <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10 mt-2 sm:mt-0">
-            <Link to="/projects">Open Full Projects Page</Link>
           </Button>
         </div>
       </div>

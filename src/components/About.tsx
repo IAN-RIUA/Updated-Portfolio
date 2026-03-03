@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-
 const About = () => {
   return (
     <section id="about" className="pt-8 pb-14 md:pt-10 md:pb-16 px-4 bg-background">
@@ -26,12 +23,6 @@ const About = () => {
               <p className="text-muted-foreground text-sm sm:text-base italic">
                 "Data is not just numbers; it's the story of patterns, trends, and opportunities waiting to be discovered."
               </p>
-            </div>
-
-            <div className="pt-2">
-              <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10">
-                <Link to="/about">Open Full About Page</Link>
-              </Button>
             </div>
           </div>
         </div>

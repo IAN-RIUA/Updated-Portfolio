@@ -40,12 +40,6 @@ const Services = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-6 text-center">
-          <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10">
-            <Link to="/services">Open Full Services Page</Link>
-          </Button>
-        </div>
       </div>
     </section>
   );
