@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
 const About = () => {
   return (
-    <section id="about" className="py-24 px-4 bg-background">
+    <section id="about" className="pt-8 pb-14 md:pt-10 md:pb-16 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <div className="animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center">
             <span className="gradient-text">About Me</span>
           </h2>
           
-          <div className="glass rounded-2xl p-8 md:p-12 space-y-6 text-lg leading-relaxed">
+          <div className="glass rounded-2xl p-6 md:p-8 space-y-4 text-base sm:text-lg leading-relaxed">
             <p className="text-foreground/90">
-              I'm passionate about the transformative power of data how raw numbers can be shaped 
-              into insights that inform smarter decisions, drive innovation and solve real world challenges.
+              I'm passionate about the transformative power of data and how raw numbers can be shaped
+              into insights that inform smarter decisions, drive innovation, and solve real-world challenges.
             </p>
             
             <p className="text-foreground/90">
@@ -19,10 +22,16 @@ const About = () => {
               of technical and analytical skills to bridge the gap between data, systems and business strategy.
             </p>
             
-            <div className="pt-6 border-t border-border/50">
-              <p className="text-muted-foreground text-base italic">
-                "Data is not just numbers it's the story of patterns, trends and opportunities waiting to be discovered."
+            <div className="pt-4 border-t border-border/50">
+              <p className="text-muted-foreground text-sm sm:text-base italic">
+                "Data is not just numbers; it's the story of patterns, trends, and opportunities waiting to be discovered."
               </p>
+            </div>
+
+            <div className="pt-2">
+              <Button asChild variant="outline" className="border-primary/40 hover:bg-primary/10">
+                <Link to="/about">Open Full About Page</Link>
+              </Button>
             </div>
           </div>
         </div>

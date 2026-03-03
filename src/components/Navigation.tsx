@@ -18,6 +18,7 @@ const Navigation = () => {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
+    { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
     { href: "#contact", label: "Contact" },
   ];
@@ -32,8 +33,8 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold gradient-text">
-            Ian Riua
+          <a href="#" className="text-lg sm:text-xl font-bold gradient-text">
+            Ian Riua Murui
           </a>
           
           {/* Desktop Navigation */}
@@ -55,6 +56,9 @@ const Navigation = () => {
             size="icon"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation-menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
@@ -62,12 +66,12 @@ const Navigation = () => {
         
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 glass rounded-lg mt-2 mb-4">
+          <div id="mobile-navigation-menu" className="md:hidden py-4 glass rounded-lg mt-2 mb-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-3 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                className="block px-4 py-3 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}

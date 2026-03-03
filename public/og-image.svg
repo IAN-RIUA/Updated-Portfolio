@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ian Riua Murui portfolio preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2f7ee6"/>
+      <stop offset="100%" stop-color="#64a2f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="30" fill="#ffffff" opacity="0.94"/>
+  <text x="120" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="url(#accent)">
+    Ian Riua Murui
+  </text>
+  <text x="120" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#334155">
+    Data Analyst | Python & SQL Developer
+  </text>
+  <text x="120" y="385" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#475569">
+    Portfolio: Projects, Services, and Analytics Work
+  </text>
+</svg>

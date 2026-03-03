@@ -25,25 +25,25 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 px-4 bg-background">
+    <section id="skills" className="pt-8 pb-14 md:pt-10 md:pb-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Skills & Expertise</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Technologies and tools I work with
           </p>
         </div>
         
-        <div className="space-y-8">
+        <div className="space-y-6">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
               className="glass rounded-xl p-6 md:p-8 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <h3 className="text-xl font-semibold mb-4 text-primary">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-primary">
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -51,7 +51,7 @@ const Skills = () => {
                   <Badge 
                     key={skillIndex}
                     variant="secondary"
-                    className="px-4 py-2 text-sm bg-primary/10 hover:bg-primary/20 border border-primary/30 transition-all hover:scale-105"
+                    className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm bg-primary/10 hover:bg-primary/20 border border-primary/30 transition-all hover:scale-105"
                   >
                     {skill}
                   </Badge>

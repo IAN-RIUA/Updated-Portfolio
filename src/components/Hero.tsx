@@ -3,7 +3,7 @@ import { Github, Linkedin, Phone, Download } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center gradient-hero relative overflow-hidden">
+    <section className="min-h-[72vh] py-10 md:py-12 flex items-center justify-center gradient-hero relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-float" />
@@ -12,24 +12,24 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10 animate-fade-in">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6">
-            <span className="text-primary text-lg font-medium">👋 Hey there, I'm</span>
+          <div className="mb-3">
+            <span className="text-primary text-base sm:text-lg font-medium">👋 Hey there, I'm</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Ian Riua</span>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3">
+            <span className="gradient-text">Ian Riua Murui</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-normal">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-3 font-normal">
             Data Analyst | Python & SQL Developer
           </p>
           
-          <p className="text-lg text-muted-foreground mb-4">
+          <p className="text-base sm:text-lg text-muted-foreground mb-3">
             Data Science & IT Specialist
           </p>
           
-          <p className="text-base text-muted-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about the transformative power of data turning raw numbers into insights that drive innovation and solve real world challenges.
+          <p className="text-sm sm:text-base text-muted-foreground/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+            Passionate about the transformative power of data, turning raw numbers into insights that drive innovation and solve real-world challenges.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
@@ -38,56 +38,54 @@ const Hero = () => {
               className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
               asChild
             >
-              <a href="/resume.pdf" download>
-                <Download className="w-5 h-5" />
-                Download CV
-              </a>
-            </Button>
-            
-            <Button 
-              size="lg" 
-              className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
-              asChild
-            >
               <a href="#contact">
-                Get In Touch
-              </a>
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="gap-2 border-primary hover:bg-primary/10 transition-all hover:scale-105"
-              asChild
-            >
-              <a href="#services">
-                View Services
+                Let's Work Together
               </a>
             </Button>
           </div>
+
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm">
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
+            </a>
+            <a
+              href="#services"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              View Services
+            </a>
+          </div>
           
-          <div className="flex gap-6 justify-center mt-12">
+          <div className="flex gap-6 justify-center mt-6">
             <a 
               href="https://linkedin.com/in/ian-riua" 
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label="Visit Ian Riua Murui on LinkedIn"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a 
               href="https://github.com/Ian-Riua" 
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label="Visit Ian Riua Murui on GitHub"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform"
             >
-              <Github className="w-6 h-6" />
+              <Github className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a 
               href="tel:+254702773413"
+              aria-label="Call Ian Riua Murui"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform"
             >
-              <Phone className="w-6 h-6" />
+              <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
           </div>
         </div>

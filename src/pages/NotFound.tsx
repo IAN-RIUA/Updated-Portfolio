@@ -5,7 +5,14 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    const windowWithDataLayer = window as Window & {
+      dataLayer?: Array<Record<string, unknown>>;
+    };
+
+    windowWithDataLayer.dataLayer?.push({
+      event: "route_not_found",
+      path: location.pathname,
+    });
   }, [location.pathname]);
 
   return (
