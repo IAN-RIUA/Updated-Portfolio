@@ -24,19 +24,17 @@ const Navigation = () => {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "glass border-b border-border/50" 
-          : "bg-transparent"
+        isScrolled ? "glass border-b border-border/50" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-lg sm:text-xl font-bold gradient-text">
-            Ian Riua Murui
+            Ian Riua Muriu
           </a>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -49,24 +47,35 @@ const Navigation = () => {
               </a>
             ))}
           </div>
-          
+
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="icon"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              isMobileMenuOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+            }
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation-menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </Button>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div id="mobile-navigation-menu" className="md:hidden py-4 glass rounded-lg mt-2 mb-4">
+          <div
+            id="mobile-navigation-menu"
+            className="md:hidden py-4 glass rounded-lg mt-2 mb-4"
+          >
             {navLinks.map((link) => (
               <a
                 key={link.href}
