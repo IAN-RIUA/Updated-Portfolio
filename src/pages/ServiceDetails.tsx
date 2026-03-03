@@ -18,7 +18,7 @@ const ServiceDetails = () => {
     <main className="min-h-screen bg-background px-4 py-10 md:py-14">
       <div className="container mx-auto max-w-4xl">
         <Button asChild variant="ghost" className="mb-6 px-0 hover:bg-transparent">
-          <Link to="/#services">
+          <Link to="/services">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Services
           </Link>

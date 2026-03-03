@@ -251,7 +251,7 @@ const Projects = () => {
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             <a
-              href={selectedProject?.url ?? "#"}
+              href={selectedProject?.url ?? "https://github.com/Ian-Riua"}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Open ${selectedProject?.name ?? "project"} repository on GitHub`}

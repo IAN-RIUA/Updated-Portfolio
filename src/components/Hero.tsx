@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Github, Linkedin, Phone, Download } from "lucide-react";
 
 const Hero = () => {
@@ -45,7 +46,7 @@ const Hero = () => {
               className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground glow transition-all hover:scale-105"
               asChild
             >
-              <a href="#contact">Let's Work Together</a>
+              <Link to="/contact">Let's Work Together</Link>
             </Button>
           </div>
 
@@ -58,12 +59,12 @@ const Hero = () => {
               <Download className="w-4 h-4" />
               Download CV
             </a>
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               View Services
-            </a>
+            </Link>
           </div>
 
           <div className="flex gap-6 justify-center mt-6">

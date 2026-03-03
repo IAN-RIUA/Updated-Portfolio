@@ -10,6 +10,8 @@ const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
+const SkillsPage = lazy(() => import("./pages/SkillsPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 const App = () => (
   <TooltipProvider>
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/services/:serviceId" element={<ServiceDetails />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
