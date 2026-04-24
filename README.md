@@ -28,5 +28,4 @@ I work with tools and technologies such as:
 
 ---
 
-## 📂 Repository Structure
 
